@@ -10,9 +10,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 // Enable router logger on development
 !isProduction && app.use(logger('dev'));
 
-app.use(cors()); // Enable CORS
-app.use(express.json()); // Enable JSON body parser
-app.use(routes); // Use routes
+app.use(cors()); 
+app.use(express.json()); 
+app.use(routes); 
 
-// Export app
+
 export { app };
